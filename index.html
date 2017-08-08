@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html style="font-size: 100px;">
+
+<head>
+	<meta charset="utf-8">
+	<title>toast</title>
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" name="viewport" />
+	<link href="https://mjss.sinaimg.cn/wap/online/home/v7/dest/css/home-a246365a7e.min.css" rel="stylesheet">
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			height: 2000px;
+		}
+	</style>
+</head>
+
+<body>
+	<script src="http://mjs.sinaimg.cn/wap/module/base/js/zepto.min.js"></script>
+	<script src="index.js"></script>
+</body>
+<script>
+	for (var i = 0; i < 100; i++) {
+		$('body').append(
+			`
+		<a href="http://global.sina.cn/?vt=4&amp;pos=108" data-docid="fychavf2202135">
+
+			<dl class="f_card">
+				<dt class="f_card_dt">
+							<img class="lazy-image" data-src="https://ks.sinaimg.cn/n/news/transform/20170328/Nty8-fyctevp8934095.png/w120h90z1l50t10b0.jpg" alt="法籍遭枪击华裔被指有酗酒、家暴、精神疾病史">
+											</dt>
+				<dd class="f_card_dd">
+					<h4 class="f_card_h4">法籍遭枪击华裔被指有酗酒、家暴、精神疾病史</h4>
+					<div class="f_card_icon">
+						<span class="comment">
+									1								<em class="icon_comment"></em>
+								</span>
+					</div>
+				</dd>
+			</dl>
+		</a>`
+		)
+	};
+
+	var obj = new LazyLoad({
+		lazyScreenMount : 1
+	})
+	// console.log(obj)
+</script>
+
+</html>
